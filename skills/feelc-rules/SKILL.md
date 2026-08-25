@@ -59,7 +59,7 @@ Create one todo per step and follow them in order.
    - **Compilation** errors (type, reference, syntax) → with `--json`, they come out as a
      structured object `{file,line,col,code,message,suggestion}` on stdout: use `line`/`col` to
      locate and `suggestion` to fix, then re-run. Stable code catalog:
-     `docs/error-schema.md`.
+     `references/error-schema.md`.
    - Verification **blockers** (`severity: "error"`: completeness gap with counter-example,
      UNIQUE/ANY conflict) → fix. Read `references/verify.md`.
 4. **Test** on concrete cases (including the edge cases from the interview):
@@ -107,3 +107,4 @@ is irreducible, **raise the question with the user**.
 - `references/examples.md` — the 4 reference models as templates.
 - `references/forbidden-patterns.md` — classic pitfalls (overlap, missing default…).
 - `references/install.md` — providing the `feelc` binary.
+- `references/error-schema.md` — structured compilation errors and stable codes.
