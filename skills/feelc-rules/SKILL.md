@@ -1,17 +1,11 @@
 ---
 name: feelc-rules
-description: >-
-  Author, verify and test business rules in the feelc DSL (a DMN/FEEL decision language compiled
-  to a deterministic Go engine). Use when the user wants to WRITE or REVIEW business rules /
-  decision logic and have them be deterministic, auditable and formally checkable — e.g.
-  "encode these eligibility rules", "write a decision table", "rule engine", "DMN", "FEEL",
-  "scoring / eligibility / pricing / promotions as rules", "generate business rules",
-  "check my decision table", "feelc". The AI writes the .rules source; the feelc
-  binary (compile / verify / run) is the deterministic oracle — never decide rule outcomes "in
-  your head", always run feelc.
+description: Author, verify, and test deterministic business rules and decision tables with the feelc DSL and engine.
 license: Apache-2.0
 metadata:
   version: 0.2.0
+  opencode/autoinvoke: 'false'
+disable-model-invocation: true
 ---
 
 # feelc-rules — writing verifiable business rules
