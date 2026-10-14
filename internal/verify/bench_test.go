@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // buildSubsumeModel builds an IR DIRECTLY (without DSL): nRules rules `>= k` over nCols

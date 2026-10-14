@@ -14,12 +14,12 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // Compile parses + compiles + verifies a source (without a file name).

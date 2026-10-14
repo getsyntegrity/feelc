@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/maxgfr/feelc/internal/genai"
-	"github.com/maxgfr/feelc/internal/graph"
-	"github.com/maxgfr/feelc/internal/project"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/genai"
+	"github.com/getsyntegrity/feelc/internal/graph"
+	"github.com/getsyntegrity/feelc/internal/project"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // handleProject returns the served project's manifest summary + module list. 404 when not running in

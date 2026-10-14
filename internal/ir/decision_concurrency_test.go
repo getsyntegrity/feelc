@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // lookupAllConcurrently resolves every decision of cm from many goroutines at once, starting

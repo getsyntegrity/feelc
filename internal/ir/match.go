@@ -3,7 +3,7 @@ package ir
 import (
 	"fmt"
 
-	"github.com/maxgfr/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/decimal"
 )
 
 // Matching semantics SHARED between the VM (execution) and the checker (analysis).

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/graph"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/graph"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 func build(t *testing.T, src string) *graph.Graph {

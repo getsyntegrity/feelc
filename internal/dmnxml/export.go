@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/model"
 )
 
 // Export is the inverse of Import: a *model.Model -> DMN XML (OUTPUT interop). Reconstructed

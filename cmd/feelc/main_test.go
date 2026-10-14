@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // feelc tck: succeeds on the fixtures (3 passed, 1 skip), and --min too high fails.

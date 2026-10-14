@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 // Null/error policy (ADR 0003).

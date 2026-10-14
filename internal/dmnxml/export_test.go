@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/dmnxml"
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/dmnxml"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/model"
 )
 
 func condSrcs(r model.Rule) []string {

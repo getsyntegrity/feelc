@@ -22,8 +22,8 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // gridBudget bounds the size of the atomic grid (anti-explosion guard).

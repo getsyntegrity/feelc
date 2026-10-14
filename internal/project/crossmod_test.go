@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 // TestCrossModuleBindingResolves loads a project where `loan` binds its `kyc_ok` input to `kyc.passed`

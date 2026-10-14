@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/tck"
+	"github.com/getsyntegrity/feelc/internal/tck"
 )
 
 // Regression (adversarial review): a runtime error on a COMPILED model (e.g. division by

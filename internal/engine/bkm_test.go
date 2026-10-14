@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 // Scalar BKM invoked in a literal-expression decision. The invocation is inlined at

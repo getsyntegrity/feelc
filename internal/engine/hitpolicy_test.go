@@ -6,7 +6,7 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 func runStr(t *testing.T, src, dec string, in map[string]any) (any, error) {

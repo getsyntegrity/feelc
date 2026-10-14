@@ -24,17 +24,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/maxgfr/feelc/internal/audit"
-	"github.com/maxgfr/feelc/internal/check"
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/explain"
-	"github.com/maxgfr/feelc/internal/genai"
-	"github.com/maxgfr/feelc/internal/graph"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/modelinfo"
-	"github.com/maxgfr/feelc/internal/project"
-	"github.com/maxgfr/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/audit"
+	"github.com/getsyntegrity/feelc/internal/check"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/explain"
+	"github.com/getsyntegrity/feelc/internal/genai"
+	"github.com/getsyntegrity/feelc/internal/graph"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/modelinfo"
+	"github.com/getsyntegrity/feelc/internal/project"
+	"github.com/getsyntegrity/feelc/internal/registry"
 )
 
 // Server: the HTTP facade.

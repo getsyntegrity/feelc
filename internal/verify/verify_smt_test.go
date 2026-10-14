@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 func z3Present() bool { _, err := exec.LookPath("z3"); return err == nil }

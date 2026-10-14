@@ -3,7 +3,7 @@ package ir_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // A null or non-applicable value satisfies NO cell, including `!= x` (ADR 0003: "null satisfies no

@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/dmnxml"
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/dmnxml"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 const gradeDMN = `<?xml version="1.0" encoding="UTF-8"?>

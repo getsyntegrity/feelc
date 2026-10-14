@@ -3,8 +3,8 @@ package dmnxml_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/dmnxml"
-	"github.com/maxgfr/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/dmnxml"
+	"github.com/getsyntegrity/feelc/internal/loader"
 )
 
 // FuzzImportDMN asserts DMN XML import never panics on arbitrary bytes (XML parse + DSL generation), and

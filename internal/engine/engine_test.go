@@ -3,7 +3,7 @@ package engine_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 // Tracer bullet (Slice 1): a single rule, end-to-end, through the ENTIRE pipeline

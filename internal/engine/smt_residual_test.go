@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/loader"
 )
 
 func loadSMTResidual(t *testing.T) string {

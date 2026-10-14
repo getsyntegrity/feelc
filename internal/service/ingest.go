@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/maxgfr/feelc/internal/check"
-	"github.com/maxgfr/feelc/internal/genai"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/check"
+	"github.com/getsyntegrity/feelc/internal/genai"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 const (

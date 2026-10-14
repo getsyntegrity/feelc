@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/diag"
 )
 
 // Error() must stay COMPATIBLE with the historical text format when no file is

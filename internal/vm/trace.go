@@ -6,7 +6,7 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // DecisionTrace: justification of a decision (winning rule + justifying cells + output).

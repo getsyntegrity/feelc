@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/service"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/service"
 )
 
 const sampleRules = "model \"m\" {}\ninput n : number in [0..100]\ndecision band : string {\n  needs: n\n  hit: first\n  < 50 => \"low\"\n  -    => \"high\"\n}\n"

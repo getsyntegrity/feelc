@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // NodeKind distinguishes an input from a decision.

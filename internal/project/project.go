@@ -24,9 +24,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // ManifestName is the conventional manifest file at a project's root (optional; absent ⇒ auto-discover).

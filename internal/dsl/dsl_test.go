@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/dsl"
 )
 
 // Regression (fork parser): an explicit `?` in an expression made the upstream

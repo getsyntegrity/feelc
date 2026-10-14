@@ -3,7 +3,7 @@ package verify_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // Subsumption: rule #2 (>= 50) included in #1 (>= 0) with the SAME output -> redundant.

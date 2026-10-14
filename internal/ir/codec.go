@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/maxgfr/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/decimal"
 )
 
 var magic = [4]byte{'F', 'L', 'I', 'R'}

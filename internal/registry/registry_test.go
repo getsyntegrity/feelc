@@ -3,8 +3,8 @@ package registry_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/registry"
 )
 
 // The snapshot taken by a request survives a concurrent swap (atomic.Pointer), and rollback

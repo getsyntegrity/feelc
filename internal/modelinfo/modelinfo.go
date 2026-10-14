@@ -11,7 +11,7 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // InputInfo describes a model input for typed widgets, the simulator and docs.

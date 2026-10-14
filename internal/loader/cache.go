@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"sync"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // Cache memoizes candidate compilation by source-content hash. The candidate endpoints

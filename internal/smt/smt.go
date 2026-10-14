@@ -18,7 +18,7 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // VarResolver returns the SMT variable name for a feelc name (input), and false if it is not

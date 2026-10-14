@@ -1,4 +1,4 @@
-module github.com/maxgfr/feelc
+module github.com/getsyntegrity/feelc
 
 go 1.25.0
 

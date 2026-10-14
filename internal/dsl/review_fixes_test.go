@@ -6,7 +6,7 @@ import (
 
 	feel "github.com/pbinitiative/feel"
 
-	"github.com/maxgfr/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/dsl"
 )
 
 // A `unit ` substring inside a string-enum domain must NOT be treated as a unit clause.

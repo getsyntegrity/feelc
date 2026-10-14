@@ -3,7 +3,7 @@ package verify_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // A numeric enum domain (`in {1,2,3}`) is a DISCRETE set: a table that covers every member is complete,

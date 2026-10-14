@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/service"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/service"
 )
 
 // TestRequestIDHeader: every response carries an X-Request-ID; a client-supplied id is echoed (so a
