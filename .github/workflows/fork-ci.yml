@@ -1,0 +1,39 @@
+name: fork-ci
+
+# CI of the Verimand fork (verimand-platform ADR-0022). Upstream's ci.yml, the npm release and the
+# Pages deployment are gated to github.repository == 'maxgfr/feelc'; this workflow is the fork's
+# verification of record: build, vet, the full suite, and the race detector on the packages that
+# hold a compiled model at run time (ir, vm, engine), as the ADR-0022 D3 concurrency gate requires.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+# One run per PR (or per branch push); a newer commit cancels the run it supersedes.
+concurrency:
+  group: fork-ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.repository == 'getsyntegrity/feelc'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          check-latest: true
+      - run: go version
+      - name: Build
+        run: go build ./...
+      - name: Vet
+        run: go vet ./...
+      - name: Full suite
+        run: go test -count=1 ./...
+      - name: Race detector on ir, vm and engine
+        run: go test -race -count=1 ./internal/ir/... ./internal/vm/... ./internal/engine/...

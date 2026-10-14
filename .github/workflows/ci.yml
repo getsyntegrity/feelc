@@ -10,6 +10,8 @@ permissions:
 
 jobs:
   test:
+    # Verimand fork: runs only in upstream; the fork runs fork-ci.yml (verimand-platform ADR-0022).
+    if: github.repository == 'maxgfr/feelc'
     # Multi-arch matrix: ubuntu = amd64, macos-14+ = arm64.
     # This proves the bit-for-bit cross-platform determinism (the project's core thesis).
     strategy:
@@ -30,6 +32,7 @@ jobs:
 
   # Active fuzzing of the highest-risk surfaces: the full front-end and untrusted .ir.bin decoding.
   fuzz:
+    if: github.repository == 'maxgfr/feelc'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,6 +48,7 @@ jobs:
 
   # The optional SMT (Z3) verification backend (ADR 0007) is build-tagged; build and test it with z3 present.
   smt:
+    if: github.repository == 'maxgfr/feelc'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
