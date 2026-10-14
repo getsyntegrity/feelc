@@ -51,6 +51,7 @@ func Decode(b []byte) (*CompiledModel, error) {
 	if d.err != nil {
 		return nil, d.err
 	}
+	cm.Seal()
 	return cm, nil
 }
 

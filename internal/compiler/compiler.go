@@ -75,6 +75,7 @@ func Compile(m *model.Model) (*ir.CompiledModel, error) {
 	if err := checkUnits(cm, inputUnits); err != nil {
 		return nil, err
 	}
+	cm.Seal()
 	return cm, nil
 }
 
