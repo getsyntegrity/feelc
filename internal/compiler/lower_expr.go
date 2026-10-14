@@ -1,7 +1,7 @@
 package compiler
 
 import (
-	feel "github.com/pbinitiative/feel"
+	feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
 	"github.com/getsyntegrity/feelc/internal/decimal"
 	"github.com/getsyntegrity/feelc/internal/diag"
