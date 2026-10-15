@@ -29,7 +29,8 @@ func Compile(src []byte) (*Model, string, *Report, error) { return loader.Compil
 
 // ProjectModule is one module of a project, in memory.
 type ProjectModule struct {
-	// Name is the module's logical identity: [A-Za-z][A-Za-z0-9_]*, at most 64 characters, unique in the project.
+	// Name is the module's logical identity: [A-Za-z][A-Za-z0-9_]*, at most 64 characters, unique in the
+	// project. It must not contain "__", which is reserved as the namespace separator; such a name is rejected.
 	Name string
 	// Source is the module's rules source text.
 	Source string
