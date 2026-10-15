@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/project"
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/service"
+	"github.com/getsyntegrity/feelc/internal/project"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/service"
 )
 
 // TestProjectEndpointsFeatureDetect confirms the project endpoints 404 in single-file mode (so the UI

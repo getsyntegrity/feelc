@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/smt"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/smt"
 )
 
 func init() { smtProve = proveSMT }

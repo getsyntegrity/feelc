@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/dsl"
 )
 
 func TestAnnotationsAttach(t *testing.T) {

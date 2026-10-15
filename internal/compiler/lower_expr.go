@@ -1,12 +1,12 @@
 package compiler
 
 import (
-	feel "github.com/pbinitiative/feel"
+	feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/model"
 )
 
 // lowerExpr compiles a FEEL node into an ExprProgram (flat bytecode).

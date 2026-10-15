@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 func compile(t *testing.T, src string) *ir.CompiledModel {

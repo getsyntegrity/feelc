@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/loader"
 )
 
 const creditPath = "../../examples/credit/credit.rules"

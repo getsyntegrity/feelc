@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/service"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/service"
 )
 
 func creditHandler(t *testing.T) http.Handler {

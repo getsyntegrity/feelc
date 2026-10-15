@@ -12,9 +12,9 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/modelinfo"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/modelinfo"
 )
 
 // Case is a reference assertion: evaluating Decision on Input must render to Expect.

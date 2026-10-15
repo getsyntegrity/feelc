@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/smt"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/smt"
 )
 
 func num(i int64) ir.Value { return ir.Num(decimal.FromInt(i)) }

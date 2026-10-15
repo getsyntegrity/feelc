@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/loader"
-	"github.com/maxgfr/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/registry"
 )
 
 // CompileFile propagates the filename onto structured errors (parse AND compile).

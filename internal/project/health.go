@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/maxgfr/feelc/internal/verify"
+	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
 // ModuleHealth is one module's verification summary (counts by finding kind + blockers).

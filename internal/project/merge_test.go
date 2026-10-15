@@ -3,8 +3,8 @@ package project
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // TestMergeIsolatesCollidingInputs loads two modules that both declare `age` and confirms the merge

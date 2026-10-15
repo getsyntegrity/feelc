@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/dsl"
 )
 
 // units compiles src and returns the per-name canonical units (cm.Units).

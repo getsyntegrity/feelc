@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	apd "github.com/cockroachdb/apd/v3"
-	feel "github.com/pbinitiative/feel"
+	feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/model"
 )
 
 // recognized ASCII whitespace (equivalent to unicode.IsSpace for ASCII) for offset computation.

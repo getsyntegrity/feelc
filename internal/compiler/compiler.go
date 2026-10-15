@@ -12,13 +12,13 @@ import (
 	"sort"
 	"strings"
 
-	feel "github.com/pbinitiative/feel"
+	feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/model"
-	"github.com/maxgfr/feelc/internal/units"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/units"
 )
 
 // Compile typechecks then lowers the conceptual model into IR.
@@ -75,6 +75,7 @@ func Compile(m *model.Model) (*ir.CompiledModel, error) {
 	if err := checkUnits(cm, inputUnits); err != nil {
 		return nil, err
 	}
+	cm.Seal()
 	return cm, nil
 }
 

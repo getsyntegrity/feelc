@@ -3,10 +3,10 @@ package engine_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 const benchTable = `model "promo" {}

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	feel "github.com/pbinitiative/feel"
+	feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
-	"github.com/maxgfr/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/diag"
 )
 
 // TestParseDepthLimit asserts that pathologically deep nesting is rejected with a clean, positioned

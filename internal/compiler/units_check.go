@@ -1,9 +1,9 @@
 package compiler
 
 import (
-	"github.com/maxgfr/feelc/internal/diag"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/units"
+	"github.com/getsyntegrity/feelc/internal/diag"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/units"
 )
 
 // checkUnits runs compile-time dimensional analysis over the model and records each input's and

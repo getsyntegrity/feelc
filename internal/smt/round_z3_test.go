@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/smt"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/smt"
 )
 
 func runZ3T(t *testing.T, query string) string {

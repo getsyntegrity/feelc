@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // link.go implements the namespaced MERGE: every module is qualified under `module__` and the modules
@@ -144,6 +144,7 @@ func merge(projectName string, mods []*Module, plan *linkPlan) (*ir.CompiledMode
 	if err := checkAcyclic(merged); err != nil {
 		return nil, err
 	}
+	merged.Seal()
 	return merged, nil
 }
 

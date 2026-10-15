@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/maxgfr/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/decimal"
 )
 
 var magic = [4]byte{'F', 'L', 'I', 'R'}
@@ -51,6 +51,7 @@ func Decode(b []byte) (*CompiledModel, error) {
 	if d.err != nil {
 		return nil, d.err
 	}
+	cm.Seal()
 	return cm, nil
 }
 

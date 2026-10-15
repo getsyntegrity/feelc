@@ -158,16 +158,30 @@ type CompiledModel struct {
 	byName map[string]int
 }
 
-// Decision finds a decision by name (lazy index).
+// Seal builds the decision index. Constructors (compiler, project linker, Decode) call it
+// before handing the model out, so a published model is never mutated by a read.
+func (cm *CompiledModel) Seal() {
+	idx := make(map[string]int, len(cm.Decisions))
+	for i := range cm.Decisions {
+		idx[cm.Decisions[i].Name] = i
+	}
+	cm.byName = idx
+}
+
+// Decision finds a decision by name. It never writes to the model, so it is safe for
+// concurrent use: it reads the index built by Seal, and falls back to a linear scan when
+// the model was not sealed or its decisions changed after sealing.
 func (cm *CompiledModel) Decision(name string) (*Decision, bool) {
-	if cm.byName == nil {
-		cm.byName = make(map[string]int, len(cm.Decisions))
-		for i := range cm.Decisions {
-			cm.byName[cm.Decisions[i].Name] = i
+	if cm.byName != nil && len(cm.byName) == len(cm.Decisions) {
+		if i, ok := cm.byName[name]; ok && cm.Decisions[i].Name == name {
+			return &cm.Decisions[i], true
 		}
 	}
-	if i, ok := cm.byName[name]; ok {
-		return &cm.Decisions[i], true
+	// Backwards, so a duplicated name resolves to the last decision, as the index does.
+	for i := len(cm.Decisions) - 1; i >= 0; i-- {
+		if cm.Decisions[i].Name == name {
+			return &cm.Decisions[i], true
+		}
 	}
 	return nil, false
 }

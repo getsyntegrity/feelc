@@ -3,7 +3,7 @@ package engine_test
 import (
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/engine"
 )
 
 // Subtraction must work without spaces around '-', and unary minus must work on any operand.

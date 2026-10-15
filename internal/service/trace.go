@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/trace"
+	"github.com/getsyntegrity/feelc/internal/trace"
 )
 
 // handleTrace builds the SOURCE TRACEABILITY report of a CANDIDATE source (compile-from-body, no

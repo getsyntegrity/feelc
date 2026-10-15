@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/project"
-	"github.com/maxgfr/feelc/internal/registry"
-	"github.com/maxgfr/feelc/internal/service"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/project"
+	"github.com/getsyntegrity/feelc/internal/registry"
+	"github.com/getsyntegrity/feelc/internal/service"
 )
 
 // writableProject sets up a 2-module project (a, b) in a temp dir with editing enabled, and returns the

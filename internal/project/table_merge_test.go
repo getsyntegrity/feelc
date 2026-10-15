@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // TestMergeQualifiesTableAndOpProg covers the highest-risk merge paths flagged by the audit:

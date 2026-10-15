@@ -3,7 +3,7 @@
 // of cells and their source positions (NL<->rule bridge + explanation).
 package model
 
-import feel "github.com/pbinitiative/feel"
+import feel "github.com/getsyntegrity/feelc/internal/thirdparty/feel"
 
 // Type: declared scalar type of a variable (source form).
 type Type string

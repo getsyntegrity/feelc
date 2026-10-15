@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // Report is the traceability of a model: decisions/inputs with their @source, the untraced

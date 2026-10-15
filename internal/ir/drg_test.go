@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/compiler"
-	"github.com/maxgfr/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/compiler"
+	"github.com/getsyntegrity/feelc/internal/dsl"
 )
 
 // RequiredDecisions returns the transitive decision dependencies of a goal in

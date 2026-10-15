@@ -8,7 +8,7 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/decimal"
 )
 
 // Tag identifies the dynamic type of a Value (FEEL is three-valued: null is part of the set).

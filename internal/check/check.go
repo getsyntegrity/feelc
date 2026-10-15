@@ -11,9 +11,9 @@ import (
 
 	apd "github.com/cockroachdb/apd/v3"
 
-	"github.com/maxgfr/feelc/internal/decimal"
-	"github.com/maxgfr/feelc/internal/engine"
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/decimal"
+	"github.com/getsyntegrity/feelc/internal/engine"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // Claim: a business assertion anchored on a witness point.

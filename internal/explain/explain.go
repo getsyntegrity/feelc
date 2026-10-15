@@ -7,9 +7,9 @@ package explain
 import (
 	"fmt"
 
-	"github.com/maxgfr/feelc/internal/ir"
-	"github.com/maxgfr/feelc/internal/modelinfo"
-	"github.com/maxgfr/feelc/internal/vm"
+	"github.com/getsyntegrity/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/modelinfo"
+	"github.com/getsyntegrity/feelc/internal/vm"
 )
 
 // Trace is the justification trace (alias of the type produced by the VM).

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/fmtrules"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/fmtrules"
 )
 
 func examplePaths(t *testing.T) []string {

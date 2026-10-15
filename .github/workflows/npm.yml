@@ -48,7 +48,8 @@ jobs:
 
   release:
     needs: ci
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Verimand fork: release, tags and npm publish run only in upstream (verimand-platform ADR-0022).
+    if: github.repository == 'maxgfr/feelc' && github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: write # tags + GitHub release (goreleaser)
@@ -89,7 +90,8 @@ jobs:
   # Actions tab; leave `version` blank to publish the latest tag. Idempotent (release-publish.sh no-ops
   # if the version is already on the registry).
   publish-npm:
-    if: github.event_name == 'workflow_dispatch'
+    # Verimand fork: manual npm publish runs only in upstream (verimand-platform ADR-0022).
+    if: github.repository == 'maxgfr/feelc' && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: read

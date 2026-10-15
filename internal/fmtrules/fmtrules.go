@@ -15,8 +15,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/dsl"
-	"github.com/maxgfr/feelc/internal/model"
+	"github.com/getsyntegrity/feelc/internal/dsl"
+	"github.com/getsyntegrity/feelc/internal/model"
 )
 
 // Source parses then re-formats a .rules source.

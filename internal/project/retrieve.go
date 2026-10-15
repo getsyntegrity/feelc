@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/maxgfr/feelc/internal/ir"
+	"github.com/getsyntegrity/feelc/internal/ir"
 )
 
 // retrieve.go builds a bounded, LEXICALLY-ranked context block to hand an LLM when authoring/editing a
