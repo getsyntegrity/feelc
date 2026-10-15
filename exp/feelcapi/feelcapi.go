@@ -13,6 +13,7 @@ import (
 	"github.com/getsyntegrity/feelc/internal/explain"
 	"github.com/getsyntegrity/feelc/internal/ir"
 	"github.com/getsyntegrity/feelc/internal/loader"
+	"github.com/getsyntegrity/feelc/internal/project"
 	"github.com/getsyntegrity/feelc/internal/verify"
 )
 
@@ -25,6 +26,51 @@ type (
 // Compile parses, type-checks, lowers and verifies a .rules source and returns the model
 // identity hash (sha256 of its IR encoding).
 func Compile(src []byte) (*Model, string, *Report, error) { return loader.Compile(src) }
+
+// ProjectModule is one module of a project, in memory.
+type ProjectModule struct {
+	// Name is the module's logical identity: [A-Za-z][A-Za-z0-9_]*, at most 64 characters, unique in the
+	// project. It must not contain "__", which is reserved as the namespace separator; such a name is rejected.
+	Name string
+	// Source is the module's rules source text.
+	Source string
+	// Uses binds a declared input of this module (local alias) to another module's decision, written "module.decision".
+	Uses map[string]string
+}
+
+// CompileProject compiles and links the modules of a project, in memory, into one merged model.
+// name labels the project; mods are the modules in any order.
+//
+// The returned string is the merged project's identity hash (sha256 of the merged model's IR
+// encoding). For a single module it equals the ID that Compile returns for the same source. It
+// carries the same limitations as Compile's ID: it identifies the compiled model, not the source
+// text (two sources that compile to the same IR share it), and it says nothing about the model's
+// verification status.
+//
+// CompileProject does not enable publication or activation; it only compiles and links. Each
+// module is verified by the linker but verification blockers are NOT returned as errors, so the
+// consumer must call Verify on the merged model and block activation when it reports blocking
+// findings.
+//
+// On any error it returns nil, "", err. The caller's Uses maps are copied and never shared.
+func CompileProject(name string, mods []ProjectModule) (*Model, string, error) {
+	conv := make([]project.SourceModule, len(mods))
+	for i, m := range mods {
+		var uses map[string]string
+		if m.Uses != nil {
+			uses = make(map[string]string, len(m.Uses))
+			for k, v := range m.Uses {
+				uses[k] = v
+			}
+		}
+		conv[i] = project.SourceModule{Name: m.Name, Source: m.Source, Uses: uses}
+	}
+	p, err := project.Compile(name, conv)
+	if err != nil {
+		return nil, "", err
+	}
+	return p.Merged, p.Hash, nil
+}
 
 // Verify re-runs the static verifier on a model.
 func Verify(m *Model) *Report { return verify.Verify(m) }
